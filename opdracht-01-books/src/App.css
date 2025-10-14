@@ -2,6 +2,8 @@
     display: flex;
     background-color: rgb(120, 236, 231);
     justify-content: space-between;
+    width: 80vw;
+    margin: 0 auto;
 }
  .book-container{
     background-color: rgb(54, 182, 204);
