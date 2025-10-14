@@ -14,4 +14,28 @@ h2, h3{
     text-align: auto;
     color : white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px 20px;
+    font-size:20px;
+}
+.Header{
+  background-color: lightblue;
+  display: flex;                
+  justify-content: space-between 50px;
+  align-items: center;
+  padding: 10px 50px;
+  font-size: 15px;
+}
+
+li{
+list-style-type: none;
+display: flex;
+font-size: 25px;
+justify-content: space-between;
+}
+ul{
+    list-style: none;
+    display:flex;
+    gap: 50px;
+margin: 0;
+padding: 25px;
 }
