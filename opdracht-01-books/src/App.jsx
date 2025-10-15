@@ -1,13 +1,15 @@
 import './App.css';
-import BookList from './assets/components/BookList';
-import Header from './assets/components/Header';
-import Layout from './assets/components/layout';
+import BookList from './components/BookList';
+import Header from './components/Header';
+import Layout from './components/layout';
+
 function App() {
  
   return (
     <>
-    <Header/>
+
     <Layout/>
+    <Header/>
     <BookList/>
     <Layout/>
       </>
