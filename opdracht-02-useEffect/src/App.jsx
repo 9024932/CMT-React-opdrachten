@@ -1,5 +1,6 @@
 import './App.css'
 import Clock from './components/Clock'
+import Welcome from './components/WelcomeMessage'
 
 function App() {
 
@@ -7,6 +8,7 @@ function App() {
     <>
       <h1>Opdracht 2 - UseEffect</h1>
       <Clock/>
+      <Welcome/>
     </>
   )
 }
