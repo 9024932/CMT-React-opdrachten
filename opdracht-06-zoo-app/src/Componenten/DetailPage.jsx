@@ -15,7 +15,7 @@ const DetailPage = () => {
   }
 
   return (
-    <section>
+    <section className='img'>
       <button onClick={() => navigate('/')}>
         ← Terug naar home
       </button>
