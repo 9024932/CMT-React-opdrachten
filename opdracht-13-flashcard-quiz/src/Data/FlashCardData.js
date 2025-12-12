@@ -1,6 +1,4 @@
-import FlashCardList from "./components/FlashCardList";
-
-const flashcards = [
+const FlashCardData = [
   {
     question: "Wat is de hoofdstad van Frankrijk?",
     answer: "Parijs",
@@ -82,16 +80,3 @@ const flashcards = [
     answer: "Canberra",
   },
 ];
-
-function App() {
-  return (
-    <>
-      <div className="min-h-screen bg-linear-to-br from-indigo-500 to-purple-600 p-6" >
-        <h1 className="text-center text-white text-4xl font-bold mb-8 drop-shadow-lg">Hoofdsteden Flashcards</h1>
-        <FlashCardList flashcards={flashcards} />
-      </div>
-    </>
-  );
-}
-
-export default App;
