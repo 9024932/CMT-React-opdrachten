@@ -74,6 +74,9 @@ const BookList = () => {
             title={book.title}
             category={book.category}
             author={book.author}
+            description={book.description}
+            year={book.year}
+            pages={book.pages}
             button={book.aantalKeerGelezen}
             btn={book.Btn}
           />
