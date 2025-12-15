@@ -1,28 +1,24 @@
+import React, { useState } from 'react'; // ✅ Import useState
 
-const AddMovie = ({ onAdd })  => {
-  const [movie, setMovie] = useState('');
+function AddMovie({ onAdd }) {
+  const [movieName, setMovieName] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (movie === '') {
-      alert('Movie name cannot be empty');
-      return;
-    }
-    onAdd(movie); 
- 
+    if (!movieName) return;
+    onAdd(movieName);
+    setMovieName('');
   };
-
-  setMovie(''); 
 
   return (
     <form onSubmit={handleSubmit}>
-      <input 
+      <input
         type="text"
-        value={movie}
-        onChange={(e) => setMovie(e.target.value)}
-        placeholder="Add a new movie"
+        value={movieName}
+        onChange={(e) => setMovieName(e.target.value)}
+        placeholder="Add a movie"
       />
-      <button type="submit">Add Movie</button>
+      <button type="submit">Add</button>
     </form>
   );
 }
